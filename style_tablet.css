@@ -1,0 +1,617 @@
+@media only screen and (min-width : 601px) and (max-width : 1000px){
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    html{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    /*Nav bar*/
+    nav{    
+        top: 0;
+        left: 0;
+        background-color: #191919;
+        padding:1.5vw 3.5vw;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        z-index:1;
+        flex-flow: wrap;
+        position: sticky;
+        width:100%;
+        box-shadow: 0 3px 5px #858585;
+    }
+    
+    .nav_logo{
+        display:flex;
+        justify-content: center;
+    }
+    
+    nav img{
+        height:4.5vw;
+    }
+    
+    nav h1{
+        color:white;
+        padding-left: 2vw;
+        padding-top: 1vw;
+        font-size: 1.75vw;
+    }
+    
+    nav h1 span{
+        color:rgb(249, 0, 77);
+    }
+
+    .dropbtn{
+        display: none;
+    }
+    
+    .dropdown-content{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .dropdown-content a{
+        text-decoration: none;
+        color: white;
+        margin: 19.92px 0px;
+        padding: 0px 20px;
+        font-size: 1.5vw;
+    }
+    
+    .dropdown-content a:hover{
+        color: rgb(249, 0, 77);
+    }
+    
+    
+    /*Hero section*/
+    .hero{
+        background-color: black;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .hero img{
+        width:30vw;
+        margin-top: 8vw;
+        margin-bottom: 8vw;
+        margin-right: 8vw;
+    }
+    
+    .hero_content{
+        color: white;
+        font-size: 2.5vw;
+    }
+    
+    .name{
+        font-size: 5vw;    
+    }
+    
+    .surname{
+        color: rgb(249, 0, 77);
+    }
+    
+    .intro{
+        font-size: 3vw;
+    }
+    
+    .about_btn{
+        background-color: rgb(249, 0, 77);
+        color: white;
+        border: none;
+        font-size: 1.5vw;
+        border-radius: 1.5vw;
+        padding: 1vw;
+        transition: transform 250ms;
+    }
+    
+    .about_btn:hover{
+        background-color: white;
+        color: rgb(249, 0, 77);
+        font-size: 1.5vw;
+        border-radius: 1.5vw;
+        border:none;
+        padding: 1vw;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+    /*About section*/
+    .about{
+        background-color: #191919;
+    }
+    #about{
+        background-color: #191919;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 7vw;
+    }
+    
+    .about_img{
+        width:30vw;
+        margin: 2vw;
+    }
+    
+    .about_content{
+        width:90vw;
+        color: white;
+    }
+    
+    .about_content span{
+        color: rgb(249, 0, 77);
+    }
+    .about_content h2{
+        font-size: 3.5vw;
+        padding: 1vw 0 3vw 0;
+    }
+    
+    .about_content p{
+        font-size: 1.75vw;
+    }
+    
+    .education,.achievements{
+        width:100vw;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding-bottom:15vw;
+    }
+    
+    .edu_btn{
+        color: white;
+        background-color: rgb(249, 0, 77);
+        width: 10vw;
+        height:10vw;
+        padding: 1vw;
+        text-align: center;
+        border: 2px solid white;
+        box-shadow:  0px 0px 10px white;
+        border-radius: 10px;
+        margin-top:18vw;
+        margin-right:8vw;
+        margin-left:8vw;
+        transition: transform 250ms;
+    }
+    
+    .achiev_btn{
+        color: white;
+        background-color: rgb(249, 0, 77);
+        width:10vw;
+        height:10vw;
+        padding: 1vw;
+        text-align: center;
+        border: 2px solid white;
+        box-shadow:  0px 0px 10px white;
+        border-radius: 10px;
+        margin-top:32vw;
+        margin-right:8vw;
+        margin-left:8vw;
+        transition: transform 250ms;
+    }
+    
+    .edu_btn:hover , .achiev_btn:hover{
+        color:white;
+        background-color: black;
+        border: 2px solid rgb(249, 0, 77);
+        box-shadow:  0px 0px 10px rgb(249, 0, 77);
+        transform: scale(1.05);
+    }
+    .edu_img,.achiev_img{
+        height: 5vw;
+    }
+    
+    .edu_btn p, .achiev_btn p{
+        font-size: 1.25vw;
+        padding-top:0.25vw;
+        text-align: center;
+    }
+    
+    
+    .btech,.highschool,.ntse,.jee_main,.jee_adv{
+        background-color: black;
+        width:45vw;
+        margin-left:2vw;
+        margin-bottom:8vw;
+        margin-right:2vw;
+        translate: transform 250ms;
+    }
+    
+    .btech:hover,.highschool:hover,.ntse:hover,.jee_main:hover,.jee_adv:hover{
+        background-color: rgb(249, 0, 77);
+        border:0.5px solid white;
+        transform: translateY(-5px);
+    }
+    
+    .btech:hover  .btech_1 p,.highschool:hover .highschool_1 p,.ntse:hover  .ntse_1 p,.jee_main:hover  .jee_main_1 p,.jee_adv:hover  .jee_adv_1 p{
+        background-color: white;
+        color: rgb(249, 0, 77);
+    
+    }
+    .btech_1,.highschool_1,.ntse_1,.jee_main_1,.jee_adv_1{
+        display:flex;
+        justify-content: space-between;
+    }
+    
+    .btech_1 img,.highschool_1 img,.ntse_1 img,.jee_main_1 img,.jee_adv_1 img{
+        height:6vw;
+        margin: 1.5vw;
+    }
+    
+    .btech_1 p,.highschool_1 p,.ntse_1 p,.jee_main_1 p,.jee_adv_1 p{
+        color: white;
+        background-color: rgb(249, 0, 77);
+        width:15vw;
+        border-radius: 0px 40px 40px 0px;
+        margin-top:6vw;
+        padding: 3px 6px;
+        font-size: 1.5vw;
+    }
+    .btech_2,.highschool_2,.ntse_2,.jee_main_2,.jee_adv_2{
+        display:flex;
+        justify-content: center;
+        margin-top:10px;
+        margin-bottom:30px; 
+        margin-right: 20px;
+    }
+    
+    .btech_2 img,.highschool_2 img,.ntse_2 img,.jee_main_2 img,.jee_adv_2 img{
+        height:6vw;
+        margin-top:1.5vw;
+        margin-right:4px;
+        margin-bottom:2vw;
+    }
+    
+    .btech_2 p,.highschool_2 p,.ntse_2 p,.jee_main_2 p,.jee_adv_2 p{
+        font-size: 1.5vw;
+        font-weight: 500;
+        width:30vw;
+        color:white;
+        margin-top:1.5vw;
+        margin-left:10px;
+    }
+    
+    .about span{
+        color: rgb(249, 0, 77);
+    }
+    
+    .btech:hover span,.highschool:hover span,.ntse:hover span,.jee_main:hover span,.jee_adv:hover span{
+        color: white;
+    }
+    /*Skills section*/
+    .skill{
+        background-color: black;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skill h2{
+        color: white;
+        text-align: center;
+        padding: 3.5vw;
+        font-size:3.5vw;
+    }
+    
+    .skill  span{
+        color: rgb(249, 0, 77);
+    }
+    
+    .skill_logos{
+        width: 90vw;
+    }
+    
+    .skill img{
+        width:25vw;
+        background-color: #191919;
+        padding:4vw;
+        border-radius:8px 8px 0px 0px;
+        box-shadow: 0px 0px 70px #858585;
+        transition:transform 250ms;
+    }
+    
+    .skill img:hover{
+        background-color: white;
+        border: 2px solid rgb(249, 0, 77);
+        box-shadow: 0px 0px 70px rgb(249, 0, 77);
+        transform: translateY(-10px);
+    }
+    
+    .first_row_logos,.second_row_logos{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .first_row_names,.second_row_names{
+        display:flex;
+        color:white;
+        justify-content: space-between;
+    }
+    
+    .skill p{
+        font-size: 3vw;
+        width:25vw;
+        text-align: center;
+        background-color: #191919;
+        padding: 5px;
+        margin-top: 3px;
+        margin-bottom: 15vw;
+        border-radius: 0px 0px 8px 8px;
+        box-shadow:0px 0px 70px #858585;
+        transition: transform 250ms;
+    }
+    /*Projects section*/
+    .project{
+        background-color: #191919;
+        color: white;
+    }
+    
+    .project h2{
+        font-size: 3.5vw;
+        padding:3.5vw;
+        text-align: center;
+    }
+    
+    .project span{
+        color:rgb(249, 0, 77);
+    }
+    
+    .project_imgs{
+        width:90vw;
+        margin:auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .blender_project,.art_project{
+        margin:5vw;
+    }
+    
+    .blender_project img,.art_project img{
+        height:20vw;
+        border: 2px solid  #858585;
+        box-shadow: 0px 0px 30px #858585;
+        border-radius: 10px;
+        transition: transform 250ms;
+    }
+    
+    .blender_project img:hover,.art_project img:hover{
+        transform:scale(1.05);
+        border: 4px solid rgb(249, 0, 77);
+        box-shadow: 0px 0px 30px rgb(249, 0, 77);
+    
+    }
+    .blender_project p,.art_project p{
+        text-align: center;
+        margin:20px;
+        font-size: 1vw;
+    }
+    
+    /*Contact section*/
+    .contact{
+        background-color: black;
+        color: white;
+    }
+    
+    .contact_me{
+        font-size: 3.5vw;
+        padding-top:3.5vw;
+        text-align: center;
+    }
+    
+    .contact span{
+        color:rgb(249, 0, 77);
+    }
+    
+    .contact_information{
+        text-align: center;
+        display:flex;
+        justify-content: space-around;
+        width:90vw;
+        margin:auto;
+        padding-top:30px;
+        padding-bottom:80px;
+    }
+    
+    .phone,.email,.location{
+        width:25vw;
+    }
+    
+    .phone img,.email img,.location img{
+        height:4.5vw;
+        background-color: #858585;
+        padding:0.75vw;
+        margin-top: 4vw;
+        border-radius: 50%;
+        box-shadow: 0 0 30px #ccc;
+        transition: transform 250ms;
+    }
+    
+    .phone img:hover,.email img:hover,.location img:hover{
+        background-color: rgb(249, 0, 77);
+        transform: translateY(-10px);
+    }
+    .contact_information p{
+        font-size: 1.5vw;
+    }
+    
+    .contact_information h2{
+        font-size: 2.25vw;
+        font-weight: 500;
+        padding:2vw;
+    }
+    
+    .contact_form{
+        display: flex;
+        justify-content: center;
+        width:90vw;
+        margin:auto;
+        padding-bottom: 6vw;
+    }
+    
+    .form_name,.form_email{
+        width:25vw;
+        padding: 1.5vw;
+        margin: 1.75vw;
+        border-radius: 30px;
+        background-color: #d1d1d1;
+        border:none;
+        font-size: 1.5vw;  
+        height:3.5vw;  
+    }
+    
+    .form_subject{
+        width:54vw;
+        padding: 1.5vw;
+        margin: 1.75vw;
+        border-radius: 30px;
+        background-color: #d1d1d1;
+        border:none;
+        font-size: 1.5vw;  
+        height:3.5vw;  
+    }
+    ::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #191919;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+        color: #191919;
+    }
+      
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #191919; 
+    }
+    
+    .form_file{
+        width:54vw;
+        padding-top: 1.5vw;
+        padding-left:1.5vw;
+        padding-bottom:3vw;
+        margin-left: 1.75vw;
+        margin-top:1vw;
+        margin-bottom:1vw;
+        border-radius: 30px;
+        background-color:#d1d1d1;
+        height:3.5vw;
+        font-size: 1.5vw;
+    }
+    
+    input::file-selector-button{
+        background-color: #d1d1d1;
+        border: none;
+        color: #191919;
+        padding-top: 3px; 
+    }
+    
+    .form_textarea{
+        height:15vw;
+        padding: 1.5vw;
+        width:54vw;
+        margin:1.75vw;
+        border-radius: 2.5vw;
+        background-color: #d1d1d1;
+        font-size: 1.375vw;
+    }
+    
+    .submit_btn{
+        border: none;
+        font-size: 1.375vw;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.25vw;
+        padding: 1vw 2vw;
+        border-radius: 1.5vw;
+        background-color: rgb(249, 0, 77);
+        color: white;
+        margin-left:2vw;
+        transition: transform 250ms;
+    }
+    
+    .paper_plane{
+        height:1.5vw;
+        margin-right:0.75vw;
+    }
+    
+    .submit_btn:hover{
+        border: none;
+        font-size: 1.375vw;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.25vw;
+        border-radius: 1.5vw;
+        background-color: #858585;
+        color: white;
+        margin-left:2vw;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+    .contact_img{
+        width:30vw;
+        height:30vw;
+        margin-top:3vw;
+        padding-left:50px;
+    }
+
+    /*side bar*/
+    .social_media{
+        display:none;
+    }
+         
+    /*footer*/
+    .footer{
+        background-color: #191919;
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .footer p{
+        color:white;
+        padding:1.25vw;
+        font-size: 1.5vw;
+    }
+        
+    .footer img{
+        margin: auto;
+        height:9vw;
+        padding: 0.75vw;
+        margin-bottom:2vw;
+    }
+
+    .footer .dropdown-content{
+        margin:auto;
+    }
+
+    .footer a{
+        font-size: 2.25vw;
+        transition: transform 250ms;;
+    }
+    
+    .social_media_foot{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        margin-top:2vw
+    }
+
+    .social_media_foot img{
+        height:7.5vw;
+        transition: transform 250ms;
+    }
+
+    .social_media_foot img:hover{
+        cursor: pointer;
+        transform:scale(1.2);
+    }
+
+    .copyright{
+        margin:end;
+        text-align: end;
+    }
+   
+}
